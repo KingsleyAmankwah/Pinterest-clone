@@ -51,7 +51,7 @@ function LoginModal({ closeModal }) {
   };
   return (
     <div className="fixed inset-0 z-20">
-      <div className="absolute inset-0 w-full bg-black h-auto opacity-50 z-40"></div>
+      <div className="absolute inset-0 w-full bg-black h-auto opacity-80 z-40"></div>
       <div
         className="relative top-[10%] left-[50%] -translate-x-2/4 w-full sm:w-[90%] lg:w-8/12 xl:w-8/12
        flex flex-col  justify-center  bg-white h-auto z-50 rounded-2xl"
@@ -64,7 +64,7 @@ function LoginModal({ closeModal }) {
             srcset=""
           />
         </div>
-        <div className="absolute right-[10px] top-[10px] text-black font-bolder text-xl sm:text-3xl">
+        <div className="absolute right-[10px] top-[10px]  text-black font-bolder text-xl sm:text-3xl">
           <button onClick={() => closeModal(false)}>X</button>
         </div>
 
@@ -79,7 +79,7 @@ function LoginModal({ closeModal }) {
             className="outline-none border text-sm border-[#0000004d] mb-3 py-2 pl-2 w-8/12 lg:w-4/12 rounded-xl"
             type="email"
             placeholder="Email"
-            value={email}
+                        value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
           <input

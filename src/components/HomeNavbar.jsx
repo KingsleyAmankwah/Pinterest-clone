@@ -7,7 +7,7 @@ function HomeNavbar() {
   const [signUpModal, setSignUpModal] = useState(false);
   return (
     <div>
-      <div className=" mt-5 sm:mt-0 container flex justify-between items-center w-full">
+      <div className=" mt-5 sm:mt-0  flex justify-between items-center w-full">
         <img
           src="./Pinterest-logo.png"
           className="h-10 sm:h-20 ml-3"

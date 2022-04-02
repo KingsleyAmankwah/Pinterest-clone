@@ -3,11 +3,11 @@ import React from "react";
 function HomeDashboard() {
   return (
     <div className="relative z-10">
-      <div className="mt-10 flex flex-col items-center">
-        <h1 className="text-center text-5xl md:text-6xl pb-3 font-semibold">
+      <div className="mt-20 flex flex-col items-center">
+        <h1 className="text-center text-4xl md:text-6xl pb-3 font-semibold">
           Get your next
         </h1>
-        <h3 className="md:text-5xl text-center text-[#c28b00] text-4xl">
+        <h3 className="md:text-5xl text-center text-[#c28b00] text-3xl">
           weeknight dinner idea
         </h3>
       </div>

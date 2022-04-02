@@ -68,7 +68,7 @@ function SignupModal({ closeModal }) {
 
   return (
     <div className="fixed inset-0 z-20">
-      <div className="absolute inset-0 w-full bg-black h-auto opacity-50 z-40"></div>
+      <div className="absolute inset-0 w-full bg-black h-auto opacity-80 z-40"></div>
       <div
         className="relative top-[10%] left-[50%] -translate-x-2/4 w-full sm:w-[90%] lg:w-8/12 xl:w-8/12
        flex flex-col  justify-center  bg-white h-auto z-50 rounded-2xl"
