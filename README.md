@@ -41,7 +41,7 @@ $ git clone https://github.com/KingsleyAmankwah/Pinterest-clone
 $ cd Pinterest-clone
 
 # Install dependencies
-$ npm i
+$ npm install
 
 # Run the project
 $ npm run start
