@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import {
-  BellIcon,
-  ChatIcon,
+  // BellIcon,
+  // ChatIcon,
   SearchIcon,
-  ArrowDownIcon,
+  // UserCircleIcon,
 } from "@heroicons/react/solid";
 import { Avatar } from "@mui/material";
 import Widgets from "./Widgets";
@@ -39,10 +39,10 @@ function Header(props) {
 
           <div className="hidden md:flex justify-center  items-center h-[48px]  min-w-[123px] bg-[rgba(17,17,17)] text-white rounded-3xl font-[700]">
             {" "}
-            <a href="">Home</a>
+            <p>Home</p>
           </div>
           <div className=" hidden lg:flex justify-center items-center h-[48px] min-w-[123px] bg-white text-black hover:bg-[#e1e1e1] rounded-3xl font-[700]">
-            <a href="">Following</a>
+            <p>Following</p>
           </div>
         </div>
 
@@ -51,7 +51,7 @@ function Header(props) {
           <div className="mr-3">
             <SearchIcon className="h-5 cursor-pointer text-[#0000004d]" />
           </div>
-          <form action="" method="post" className="flex flex-1 ">
+          <form className="flex flex-1 ">
             <input
               type="text"
               placeholder="Search"
@@ -71,26 +71,27 @@ function Header(props) {
         {/* Icons Wrapper */}
 
         <div className="flex ml-auto">
-          <div>
+          {/* <div>
             <BellIcon className="hoverAnimation hidden md:inline" />
           </div>
 
           <div>
             <ChatIcon className=" hoverAnimation hidden md:inline" />
-          </div>
+          </div> */}
 
           <div>
-            <Avatar className="hoverAnimation uppercase" src={user.photoURL}>
+            <Avatar
+              className="hoverAnimation uppercase"
+              src={user.photoURL}
+              onClick={() => setOpenModal(!openModal)}
+            >
               {user.email[0]}{" "}
             </Avatar>
           </div>
 
-          <div>
-            <ArrowDownIcon
-              className="hoverAnimation"
-              onClick={() => setOpenModal(!openModal)}
-            />
-          </div>
+          {/* <div>
+            <UserCircleIcon className="hoverAnimation" />
+          </div> */}
         </div>
       </div>
 
