@@ -30,7 +30,7 @@ function LoginModal({ closeModal }) {
         );
       })
       .catch((error) => {
-        alert(error.message);
+        alert(error);
       });
 
     setLoading(false);
@@ -46,7 +46,7 @@ function LoginModal({ closeModal }) {
         // console.log(res);
       })
       .then((error) => {
-        alert(error);
+        console.log(error);
       });
   };
   return (
