@@ -1,3 +1,4 @@
+/* eslint-disable*/
 import React, { useEffect, useState } from "react";
 import Header from "./Header";
 import Dashboard from "./Dashboard";
@@ -20,9 +21,9 @@ function Mainboard() {
   const onSearchSubmit = (term) => {
     //console.log("on seach submit", term);
     getImages(term).then((res) => {
-      //Get Photos results
+      //* Get Photos results
       let results = res.data.results;
-      //Store the results in an array
+      //?Store the results in an array
       let newPins = [...results, ...pins];
       //Sort pins
       newPins.sort(function (a, b) {
@@ -50,6 +51,7 @@ function Mainboard() {
       "Bali",
       "dinner",
       "food",
+      "sneakers",
     ];
 
     /*Loop through all the pins and push it in the promises.
@@ -76,10 +78,6 @@ function Mainboard() {
     });
   };
 
-  /*UsEffect is used so that every time the page loads,  
-      the function in it is called...
-    */
-
   useEffect(() => {
     getNewPins();
   }, []);
@@ -87,7 +85,6 @@ function Mainboard() {
   return (
     <div>
       <Header onSubmit={onSearchSubmit} />
-
       {loading ? <Dashboard pins={pins} /> : <Spinner />}
     </div>
   );
