@@ -10,7 +10,7 @@ This is a clone of the Pinterest web application...
 
 ![Mainboard](https://user-images.githubusercontent.com/64941442/213516438-74707784-824b-4ccc-862d-0fd5bd5af484.png)
 
-<!-- ## :rocket: [Demo](https://laugh-out-loud-kingsleyamankwah.vercel.app/) -->
+## :rocket: [Demo](https://pterest-clone.netlify.app/)
 
 ## :sparkles: Features
 
