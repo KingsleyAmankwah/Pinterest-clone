@@ -27,10 +27,10 @@ Before starting :checkered_flag:, you need to have [Git](https://git-scm.com) an
 
 ```bash
 # Clone this project
-$ git clone https://github.com/KingsleyAmankwah/Laugh-Out-Loud
+$ git clone https://github.com/KingsleyAmankwah/Pinterest-clone
 
 # Access
-$ cd Laugh-Out-Loud
+$ cd Pinterest-clone
 
 # Install dependencies
 $ npm i
