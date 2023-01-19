@@ -1,4 +1,4 @@
-import react, { useState } from "react";
+import { useState } from "react";
 
 function Pin({ pin, urls }) {
   const [hovered, setHovered] = useState(false);
@@ -11,9 +11,8 @@ function Pin({ pin, urls }) {
       >
         <img
           src={urls?.regular}
-          className="flex w-full h-full rounded-2xl cursor-zoom-in object-cover "
+          className="flex w-full h-full rounded-2xl cursor-zoom-in object-fill"
           alt="pin"
-          srcSet=""
         />
 
         {hovered && (
