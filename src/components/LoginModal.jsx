@@ -43,10 +43,10 @@ function LoginModal({ closeModal }) {
     const provider = new GoogleAuthProvider();
     signInWithPopup(auth, provider)
       .then((res) => {
-        console.log(res);
+        // console.log(res);
       })
       .then((error) => {
-        alert(error.message);
+        alert(error);
       });
   };
   return (
@@ -61,7 +61,6 @@ function LoginModal({ closeModal }) {
             className=" h-10 w-10 sm:w-[60px] sm:h-[60px]"
             src="./pcl.png"
             alt=""
-            srcset=""
           />
         </div>
         <div className="absolute right-[10px] top-[10px]  text-black font-bolder text-xl sm:text-3xl">
@@ -79,7 +78,7 @@ function LoginModal({ closeModal }) {
             className="outline-none border text-sm border-[#0000004d] mb-3 py-2 pl-2 w-8/12 lg:w-4/12 rounded-xl"
             type="email"
             placeholder="Email"
-                        value={email}
+            value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
           <input
@@ -91,9 +90,9 @@ function LoginModal({ closeModal }) {
           />
 
           <div className="flex justify-start text-left mb-1">
-            <a href="" className="text-black text-sm font-bold text-left">
+            <p className="text-black text-sm font-bold text-left">
               Forgot your Password?
-            </a>
+            </p>
           </div>
 
           <div className="flex justify-center w-8/12 lg:w-4/12">
@@ -122,52 +121,12 @@ function LoginModal({ closeModal }) {
                   src="./gogle.png"
                   className="h-5 w-5 rounded-full mr-5"
                   alt="google_logo"
-                  srcset=""
                 />{" "}
               </span>{" "}
               <p className="font-bold"> Continue with Google</p>
             </button>
           </div>
         </form>
-
-        <div className="mb-3">
-          <p className="text-center text-sm">
-            By continuing, you agree to Pinterest's
-            <br />
-            <span>
-              <a href="" className="font-bold">
-                Terms of Service
-              </a>
-            </span>{" "}
-            and acknowledge you've read our
-            <br />
-            <span>
-              <a href="" className="font-bold">
-                Privacy Policy
-              </a>
-            </span>{" "}
-          </p>
-        </div>
-
-        <div className="flex flex-col items-center justify-center mb-4">
-          <p className="text-sm">
-            Not on Pinterest yet?{" "}
-            <span>
-              <a href="" className="font-bold">
-                Sign up
-              </a>
-            </span>{" "}
-          </p>
-
-          <p className="text-sm">
-            Are you a Business?{" "}
-            <span>
-              <a href="" className="font-bold">
-                Get Started Here!
-              </a>
-            </span>{" "}
-          </p>
-        </div>
       </div>
     </div>
   );
