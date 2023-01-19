@@ -1,6 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
 import { Avatar } from "@mui/material";
-//import LogoutModal from "./LogoutModal";
 import { signOut } from "firebase/auth";
 import auth from "./firebase";
 import { logout, selectUser } from "../features/userSlice";
