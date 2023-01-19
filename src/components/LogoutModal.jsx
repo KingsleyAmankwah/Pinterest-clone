@@ -8,7 +8,7 @@ function LogoutModal() {
         className="relative bg-white top-[10%] left-[50%] -translate-x-2/4
        w-full h-auto sm:w-[90%] lg:w-8/12 xl:w-8/12"
       >
-        <button>X</button>
+        <button className="hoverAnimation">X</button>
       </div>
     </div>
   );
