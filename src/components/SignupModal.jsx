@@ -59,10 +59,10 @@ function SignupModal({ closeModal }) {
     const provider = new GoogleAuthProvider();
     signInWithPopup(auth, provider)
       .then((res) => {
-        console.log(res);
+        // console.log(res);
       })
       .catch((error) => {
-        alert(error.message);
+        alert(error);
       });
   };
 
@@ -77,8 +77,7 @@ function SignupModal({ closeModal }) {
           <img
             className=" h-10 w-10 sm:w-[60px] sm:h-[60px]"
             src="./pcl.png"
-            alt=""
-            srcset=""
+            alt="logo"
           />
         </div>
         <div className="absolute right-[10px] top-[10px] text-black font-bolder text-xl sm:text-3xl">
@@ -151,52 +150,12 @@ function SignupModal({ closeModal }) {
                   src="./gogle.png"
                   className="h-5 w-5 rounded-full mr-5"
                   alt="google_logo"
-                  srcset=""
                 />{" "}
               </span>{" "}
               <p className="font-bold"> Continue with Google</p>
             </button>
           </div>
         </form>
-
-        <div className="mb-3">
-          <p className="text-center text-sm">
-            By continuing, you agree to Pinterest's
-            <br />
-            <span>
-              <a href="" className="font-bold">
-                Terms of Service
-              </a>
-            </span>{" "}
-            and acknowledge you've read our
-            <br />
-            <span>
-              <a href="" className="font-bold">
-                Privacy Policy
-              </a>
-            </span>{" "}
-          </p>
-        </div>
-
-        <div className="flex flex-col items-center justify-center mb-4">
-          <p className="text-sm">
-            Already a member?{" "}
-            <span>
-              <a href="" className="font-bold">
-                Log in
-              </a>
-            </span>{" "}
-          </p>
-
-          <p className="text-sm">
-            Are you a Business?{" "}
-            <span>
-              <a href="" className="font-bold">
-                Get Started Here!
-              </a>
-            </span>{" "}
-          </p>
-        </div>
       </div>
     </div>
   );
